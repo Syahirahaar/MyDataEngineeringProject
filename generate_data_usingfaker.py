@@ -8,28 +8,23 @@ fake = Faker()
 
 from datetime import datetime
 
-#
-# from faker import Faker
-# fake=Faker()
-# Faker.seed(0)
-# for _ in range(5):
-#     print(fake.past_datetime())
-# def random_names(name_type, size):
-#     """
-#     Generate n-length ndarray of person names.
-#     name_type: a string, either first_names or last_names
-#     """
-#     names = getattr(Provider, name_type)
-#     return np.random.choice(names, size=size)
 
-# def random_genders(size, p=None):
-#
-#         """Generate n-length ndarray of genders."""
-#     if not p:
-#         p = (0.49, 0.49, 0.01, 0.01)
-#     gender = ("M", "F", "O", "")
-#     return np.random.choice(gender, size=size, p=p
+def random_names(name_type, size):
+    """
+    Generate n-length ndarray of person names.
+    name_type: a string, either first_names or last_names
+    """
+    names = getattr(Provider, name_type)
+    return np.random.choice(names, size=size)
 
+
+def random_genders(size, p=None):
+    """Generate n-length ndarray of genders."""
+    if not p:
+        # default probabilities
+        p = (0.49, 0.49, 0.01, 0.01)
+    gender = ("M", "F", "O", "")
+    return np.random.choice(gender, size=size, p=p)
 
 def random_dates(start, end, size):
 
@@ -55,16 +50,18 @@ def random_id(id,size):
         id.append(fake.ssn())
     return id
 
-size = 129881
-df = pd.DataFrame(columns=['timestamp','Loca','ssn'])
-# df = pd.DataFrame(columns=['First', 'Last', 'Birthdate','Loca','ssn'])
-
-# df['First'] = random_names('first_names', size)
-# df['Last'] = random_names('last_names', size)
-df['Loca'] = random_location('location', size)
-df['ssn'] = random_id('id',size)
-#df['Gender'] = random_genders(size)
+size = 10
+df = pd.DataFrame(columns=['flight_id','review_id','timestamp','Location','Names','Gender','lala','lali'])
+df['First'] = random_names('first_names', size)
+df['Last'] = random_names('last_names', size)
+df['Names'] = df['First'] + ' ' + df['Last']
+df['flight_id'] = random_id('id',size)
+df['review_id'] = np.random.randint(1,10,len(df) )
+df['Location'] = random_location('location', size)
+df['Gender'] = random_genders(size)
 df['timestamp'] = random_dates(start=pd.to_datetime('2017-01-01'), end=pd.to_datetime('2018-01-01'), size=size)
+df['lala'] = df['Location'][3][4]
+df['Destination'] = [x.split('/')[-1] for x in df['lala']]
 #df['timestamp'] = randomtimes(stime=pd.to_datetime('01-01-2010 00:00:00'),etime=pd.to_datetime('01-01-2012 00:00:00'),size=size)
-
-df.to_csv('fake-file1.csv')
+df1 = df[['flight_id','review_id','timestamp','Names','Gender','Destination']]
+df1.to_csv('generate_fake_data.csv')
