@@ -68,6 +68,10 @@ This Project will show how satisfied the customer towards services provided by a
 
 # Pipelines
 - Explain the pipelines for processing that you are building
+
+<img width="353" alt="pipeline" src="https://user-images.githubusercontent.com/48470854/117396308-3fe00580-af2c-11eb-8bd5-e6f04acc5c85.png">
+
+
 - Go through your development and add your source code
 
 ## Stream Processing
