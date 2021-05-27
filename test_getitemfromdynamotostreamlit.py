@@ -3,19 +3,69 @@ import botocore
 import json
 import streamlit as st
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 st.markdown('hoho')
 
-df = pd.read_csv('C:/Users/Syahirahar/Documents/GitHub/MyDataEngineeringProject/Invistico_Airline.csv').head(5)
-st.write(df)
+@st.cache
 
-ack = 'AKIA6EBJ5GBWCVPKJ6VR'
-ps = '62bOhhyH31R8PpApiNFGZWwKVePwzA9z+cyfNPg8'
+def load_data(nrows):
+    df = pd.read_csv('C:/Users/Syahirahar/Documents/GitHub/MyDataEngineeringProject/Invistico_Airline.csv', nrows=nrows).head(5)
+    return df
 
+data_load_state = st.text('Loading data...')
+df = load_data(100)
+data_load_state.text('Done! (using st.cache)')
+
+if st.checkbox('Show raw data'):
+    st.subheader('Raw data')
+    st.write(df)
+
+st.subheader('Gender')
+#np.histogram(df['Gender'],bins=[0,20])
+#hist_value,bins = np.histogram(df['Gender'],bins)
+st.text(df['Gender'])
+hist_values = plt.hist(df['Gender'])
+st.text(hist_values)
+
+st.bar_chart(hist_values)
+# np_array = np.histogram([10, 3, 8, 9, 7], bins=[2, 4, 6, 8, 10])[0]
+#
+# st.bar_chart(np_array)
+#st.bar_chart(hist_values)
+#st.write(df)
+
+df1 = df[['Gender']]
+
+st.bar_chart(df1)
+
+cols = ["name", "host_name", "neighbourhood", "room_type", "price"]
+
+# Create histogram dataset
+# hist_array, bin_array = np.histogram([4, 10, 3, 13, 8, 9, 7], bins=[2, 4, 6, 8, 10, 12, 14])
+
+# # Set some configurations for the chart
+# plt.figure(figsize=[10, 5])
+# plt.xlim(min(bin_array), max(bin_array))
+# plt.grid(axis='y', alpha=0.75)
+# plt.xlabel('Edge Values', fontsize=20)
+# plt.ylabel('Histogram Values', fontsize=20)
+# plt.title('Histogram Chart', fontsize=25)
+#
+# # Create the chart
+# plt.bar(bin_array[:-1], hist_array, width=0.5, color='blue')
+# # Display the chart
+# plt.show()
+
+access_key = 'AKIA6EBJ5GBWCVPKJ6VR'
+secret_key = '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'
+
+#(aws_access_key_id=access_key, aws_secret_access_key = secret_key)
 
 def get_transactions(TransactionType_OriginCountry,Date,dynamodb=None):
     #client = boto3.client('dynamodb',region_name='ap-southeast-1')
-    dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1')
+    dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1',aws_access_key_id=access_key, aws_secret_access_key = secret_key)
 
     #, endpoint_url="http://localhost:8000"
     # Specify the table to read from
@@ -31,8 +81,17 @@ def get_transactions(TransactionType_OriginCountry,Date,dynamodb=None):
 
 
 if __name__ == '__main__':
-    device = get_transactions("PURCHASE_USA", 2019-11-21,)
+    device = get_transactions("PURCHASE_USA", "2019-11-21",)
     if device:
-        print("Get Device Data Done:")
+        #print("Get Device Data Done:")
         # Print the data read
-        print(device)
+        #print(device)
+        st.write("Get Device Data Done:")
+        st.write(device)
+        #pd.DataFrame.from_dict(device)
+
+        st.table(device)
+        st.text(device)
+
+
+        #st.line_chart(a)
