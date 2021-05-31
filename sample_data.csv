@@ -1,0 +1,11 @@
+,Unnamed: 0,customer_id,review_id,flight_id,Names,gender,cust_type,Age,type_of_travel,Class,flight_distance,seat_comfort,deptarrive_time_convenient,food_drink,gate_location,inflight_wifi,inflight_ent,online_support,easy_online_booking,onboard_service,legroom,baggage_handling,checking_service,cleanliness,online_boarding,dept_delay_min,arrival_delay_min,Timestamp,destination
+0,0,294-93-0685,128195,S0685,Loran Von,M,Loyal Customer,65.0,Personal Travel,Eco,265.0,0.0,0.0,0.0,2.0,2.0,4.0,2.0,3.0,3.0,0.0,3.0,5.0,3.0,2.0,0.0,0.0,12/4/2021 9:08,Shanghai
+1,1,728-97-2565,122231,S2565,Elana Beatty,F,Loyal Customer,47.0,Personal Travel,Business,2464.0,0.0,0.0,0.0,3.0,0.0,2.0,2.0,3.0,4.0,4.0,4.0,2.0,3.0,2.0,310.0,305.0,19/4/2021 12:48,Shanghai
+2,2,600-21-7300,126402,S7300,Danita Corkery,M,Loyal Customer,15.0,Personal Travel,Eco,2138.0,0.0,0.0,0.0,3.0,2.0,0.0,2.0,2.0,3.0,3.0,4.0,4.0,4.0,2.0,0.0,0.0,1/5/2021 8:05,Shanghai
+3,3,114-56-6256,125491,S6256,Herminia Mann,M,Loyal Customer,60.0,Personal Travel,Eco,623.0,0.0,0.0,0.0,3.0,3.0,4.0,3.0,1.0,1.0,0.0,1.0,4.0,1.0,3.0,0.0,0.0,3/5/2021 9:33,Shanghai
+4,4,016-56-9671,784,S9671,Meryl Emmerich,M,Loyal Customer,70.0,Personal Travel,Eco,354.0,0.0,0.0,0.0,3.0,4.0,3.0,4.0,2.0,2.0,0.0,2.0,4.0,2.0,5.0,0.0,0.0,25/4/2021 21:29,Shanghai
+5,5,269-37-0188,78154,S0188,Maybell Lynch,M,Loyal Customer,30.0,Personal Travel,Eco,1894.0,0.0,0.0,0.0,3.0,2.0,0.0,2.0,2.0,5.0,4.0,5.0,5.0,4.0,2.0,0.0,0.0,30/4/2021 14:37,Shanghai
+6,6,465-91-4806,16266,S4806,Adolfo Lockman,F,Loyal Customer,66.0,Personal Travel,Eco,227.0,0.0,0.0,0.0,3.0,2.0,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,3.0,17.0,15.0,23/4/2021 22:02,Shanghai
+7,7,502-70-9324,74343,S9324,Barnard Rowe,M,Loyal Customer,10.0,Personal Travel,Eco,1812.0,0.0,0.0,0.0,3.0,2.0,0.0,2.0,2.0,3.0,3.0,4.0,5.0,4.0,2.0,0.0,0.0,6/4/2021 13:04,Shanghai
+8,8,665-35-9479,69767,S9479,Keifer Mueller,F,Loyal Customer,56.0,Personal Travel,Business,73.0,0.0,0.0,0.0,3.0,5.0,3.0,5.0,4.0,4.0,0.0,1.0,5.0,4.0,4.0,0.0,0.0,23/4/2021 13:49,Shanghai
+9,9,798-67-4196,96818,S4196,Audrianna Murphy,M,Loyal Customer,22.0,Personal Travel,Eco,1556.0,0.0,0.0,0.0,3.0,2.0,0.0,2.0,2.0,2.0,4.0,5.0,3.0,4.0,2.0,30.0,26.0,1/5/2021 4:30,Shanghai
