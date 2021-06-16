@@ -63,25 +63,33 @@ secret_key = '62bOhhyH31R8PpApiNFGZWwKVePwzA9z+cyfNPg8'
 
 #(aws_access_key_id=access_key, aws_secret_access_key = secret_key)
 
-def get_transactions(TransactionType_OriginCountry,Date,dynamodb=None):
+def get_transactions(CustomerID,timestamp,dynamodb=None):
     #client = boto3.client('dynamodb',region_name='ap-southeast-1')
     dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1',aws_access_key_id=access_key, aws_secret_access_key = secret_key)
 
     #, endpoint_url="http://localhost:8000"
     # Specify the table to read from
-    devices_table = dynamodb.Table('Transactions')
+    devices_table = dynamodb.Table('Customers')
 
     try:
         response = devices_table.get_item(
-            Key={'TransactionType_OriginCountry': TransactionType_OriginCountry, 'Date': Date})
+            Key={'CustomerID': CustomerID, 'timestamp': timestamp})
     except botocore.exceptions.ClientError as e:
         print(e.response['Error']['Message'])
     else:
         return response['Item']
+        #
+        # try:
+        #     response = devices_table.get_item(
+        #         Key={'TransactionType_OriginCountry': TransactionType_OriginCountry, 'Date': Date})
+        # except botocore.exceptions.ClientError as e:
+        #     print(e.response['Error']['Message'])
+        # else:
+        #     return response['Item']
 
 
 if __name__ == '__main__':
-    device = get_transactions("PURCHASE_USA", "2019-11-21",)
+    device = get_transactions("100-098-765", "2021-10-22",)
     if device:
         #print("Get Device Data Done:")
         # Print the data read
@@ -89,9 +97,9 @@ if __name__ == '__main__':
         st.write("Get Device Data Done:")
         st.write(device)
         #pd.DataFrame.from_dict(device)
-
-        st.table(device)
-        st.text(device)
+        #
+        #st.table(device)
+        #st.text(device)
 
 
         #st.line_chart(a)
