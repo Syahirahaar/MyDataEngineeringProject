@@ -1,0 +1,21 @@
+,CustomerID,review_id,flight_id,names,gender,customer_type,age,type_of_travel,class,flight_distance,seat_comfort,deptarrive_time_convenient,food_drink,gate_location,inflight_wifi,inflight_entertainment,online_support,ease_online_booking,onboard_service,legroom_service,baggage_handling,checkin_service,cleanliness,online_boarding,dept_delay_min,arrival_delay_min,timestamp,destination
+129862,775-03-7767,6055,S7767,Prentice Gutkowski,M,disloyal Customer,25.0,Personal Travel,Eco,2220.0,4.0,4.0,3.0,4.0,4.0,3.0,4.0,4.0,3.0,3.0,3.0,4.0,3.0,4.0,0.0,0.0,14/4/2021 20:58,Shanghai
+129863,300-80-3410,119570,S3410,Ludwig Fadel,M,disloyal Customer,52.0,Personal Travel,Eco,1602.0,4.0,5.0,4.0,2.0,4.0,4.0,3.0,4.0,3.0,2.0,2.0,2.0,1.0,4.0,0.0,0.0,21/4/2021 21:41,Shanghai
+129864,480-65-4064,33593,S4064,Arlin Predovic,M,disloyal Customer,24.0,Personal Travel,Eco,2039.0,4.0,5.0,4.0,2.0,2.0,4.0,2.0,2.0,4.0,5.0,5.0,5.0,4.0,2.0,0.0,0.0,15/4/2021 11:02,Shanghai
+129865,010-69-8443,22449,S8443,Dona Lang,F,disloyal Customer,59.0,Personal Travel,Eco,2641.0,4.0,5.0,4.0,3.0,2.0,4.0,2.0,2.0,1.0,5.0,2.0,3.0,3.0,2.0,5.0,0.0,23/4/2021 12:50,Shanghai
+129866,010-40-0812,2024,S0812,Jonnie Kling,F,disloyal Customer,18.0,Personal Travel,Eco,1243.0,5.0,0.0,5.0,1.0,2.0,5.0,2.0,2.0,4.0,5.0,5.0,3.0,5.0,2.0,0.0,0.0,19/4/2021 14:22,Shanghai
+129867,790-69-3386,69351,S3386,Rogelio Osinski,F,disloyal Customer,30.0,Personal Travel,Eco,1961.0,5.0,1.0,5.0,4.0,5.0,5.0,5.0,5.0,3.0,2.0,3.0,4.0,4.0,5.0,0.0,0.0,17/4/2021 6:59,Shanghai
+129868,758-05-9581,72777,S9581,Levar Stamm,F,disloyal Customer,45.0,Personal Travel,Eco,1612.0,5.0,2.0,5.0,3.0,2.0,5.0,2.0,2.0,2.0,5.0,4.0,3.0,4.0,2.0,0.0,0.0,28/4/2021 11:32,Shanghai
+129869,064-64-8671,19432,S8671,Kameron Borer,F,disloyal Customer,55.0,Personal Travel,Eco,1953.0,5.0,2.0,5.0,4.0,1.0,5.0,5.0,1.0,1.0,1.0,3.0,3.0,4.0,1.0,0.0,0.0,19/4/2021 8:14,Shanghai
+129870,454-54-2667,68670,S2667,Eliza Haley,M,disloyal Customer,70.0,Personal Travel,Eco,1674.0,5.0,4.0,5.0,1.0,5.0,5.0,5.0,5.0,3.0,2.0,4.0,5.0,4.0,5.0,54.0,46.0,20/4/2021 12:06,Shanghai
+129871,275-32-6629,68289,S6629,Grisel Murazik,F,disloyal Customer,35.0,Personal Travel,Eco,3287.0,5.0,4.0,5.0,3.0,2.0,5.0,2.0,2.0,4.0,5.0,4.0,4.0,3.0,2.0,9.0,0.0,10/4/2021 19:06,Shanghai
+129872,505-49-1244,122839,S1244,Bridget Swift,F,disloyal Customer,69.0,Personal Travel,Eco,2240.0,5.0,4.0,5.0,3.0,4.0,5.0,4.0,4.0,5.0,4.0,4.0,3.0,4.0,4.0,4.0,0.0,8/4/2021 16:16,Shanghai
+129873,348-96-5625,109459,S5625,Asher Brown,F,disloyal Customer,63.0,Personal Travel,Eco,1942.0,5.0,5.0,4.0,4.0,3.0,4.0,3.0,3.0,5.0,2.0,5.0,3.0,5.0,3.0,7.0,,12/4/2021 23:08,Shanghai
+129874,216-81-3816,40975,S3816,Vennie Morar,M,disloyal Customer,11.0,Personal Travel,Eco,2752.0,5.0,5.0,5.0,2.0,2.0,5.0,2.0,2.0,3.0,5.0,3.0,5.0,4.0,2.0,5.0,0.0,19/4/2021 22:07,Shanghai
+129875,443-69-2945,100540,S2945,Hurbert Leuschke,F,disloyal Customer,29.0,Personal Travel,Eco,1731.0,5.0,5.0,5.0,3.0,2.0,5.0,2.0,2.0,3.0,3.0,4.0,4.0,4.0,2.0,0.0,0.0,1/5/2021 17:55,Shanghai
+129876,578-70-0221,119211,S0221,Mercy Parisian,M,disloyal Customer,63.0,Personal Travel,Business,2087.0,2.0,3.0,2.0,4.0,2.0,1.0,1.0,3.0,2.0,3.0,3.0,1.0,2.0,1.0,174.0,172.0,14/4/2021 19:10,Shanghai
+129877,096-40-9828,50200,S9828,Davonte Hilpert,M,disloyal Customer,69.0,Personal Travel,Eco,2320.0,3.0,0.0,3.0,3.0,3.0,2.0,2.0,4.0,4.0,3.0,4.0,2.0,3.0,2.0,155.0,163.0,25/4/2021 16:39,Shanghai
+129878,136-58-5157,70375,S5157,Squire Kautzer,F,disloyal Customer,66.0,Personal Travel,Eco,2450.0,3.0,2.0,3.0,2.0,3.0,2.0,2.0,3.0,3.0,2.0,3.0,2.0,1.0,2.0,193.0,205.0,21/4/2021 16:16,Shanghai
+129879,541-93-6753,126181,S6753,Eldred Reilly,F,disloyal Customer,38.0,Personal Travel,Eco,4307.0,3.0,4.0,3.0,3.0,3.0,3.0,3.0,4.0,5.0,5.0,5.0,3.0,3.0,3.0,185.0,186.0,17/4/2021 12:51,Shanghai
+129880,348-92-3403,54817,S3403,Demi Stokes,M,,,,,,,,,,,,,,,,,,,,,,5/4/2021 7:35,Shanghai
+129881,263-93-5374,9440,S5374,Olan Larkin,F,,,,,,,,,,,,,,,,,,,,,,,Shanghai
