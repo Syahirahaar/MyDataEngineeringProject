@@ -83,8 +83,38 @@ Content in the first column | Content in the second column
 - Go through your development and add your source code
 
 ## Stream Processing
+For ease of implementation and testing, we will build the data pipeline in stages. There are 5 stages and these stages shown below  
+![image](https://user-images.githubusercontent.com/48470854/122516888-e813de80-d041-11eb-9b91-1098ab88895c.png)
+
+Pre-connect function
+Before the data being processed, data need to be confirmed in what form before proceed to the next stage. In this stage, I'm using Atom platform writing
+the code to send the data into API using AWS API Gateway.
+
+Before we send the data into API,there are few things need to be done in order to makesure that can be used optimizely.
+1) I used faker library to complete the data.
+
+### Connect Data Stream
+In this stages, an API has been initiated and ready to receive data from local csv file. REST API GET method has been initiated to send the response based on the users's request while POST method is for collecting user's data
+
+
 ### Storing Data Stream
+
+When the data hits the API endpoint, the API endpoint triggers the lambda, and the lambda function pushes the data into the Kinesis stream. The Kinesis stream the data into different AWS services configured in this project. Once the data is ready in kinesis, the following data stream is configured to send the data into different services.
+
+Kinesis - DynamoDB stream: In this data stream, the data is flowing from Kinesis to DynamoDB. Lambda function gets trigger whenever the data is ready inside the kinesis, based on the table partition key and sort key defined in the dynamo DB table and lambda function the data ends up inside the DynamoDB table.
+
+Kinesis - S3 stream: In this data stream, the data is flowing from Kinesis to the S3 bucket. Once the data ends up in the S3 bucket, it is saved inside the s3 bucket in a JSON format. Later the data can be used for different purposes. Again lambda is used here, for the processing of data before saving it inside the S3 bucket.
+
+Kinesis- Kinesis firehose - Redshift stream: This stream pipeline is used to send the data from Kinesis to the Redshift data warehouse. To send the data to Redshift in AWS, a Kinesis firehose is used to send the data into redshift.
+
 ### Processing Data Stream
+
+Using lambda, I prepared the code to clean data into 5 columns that has been defined in dynamodb for airline customer. Among the activities done here are pemoving unrelated data from certain columns. By the way, the data are in dictionary form.
+
+## Visualizations
+
+For Stream Process, dynamoDB is connected to streamlit to visualize the data
+
 ## Batch Processing
 ## Visualizations
 
