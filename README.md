@@ -83,6 +83,7 @@ Content in the first column | Content in the second column
 - Go through your development and add your source code
 
 ## Stream Processing
+
 ### Storing Data Stream
 ### Processing Data Stream
 ## Batch Processing
