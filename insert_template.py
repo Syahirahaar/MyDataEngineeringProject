@@ -2,11 +2,11 @@ import pandas as pd
 import requests
 
 #URL OF ENDPOINT
-URL = 'https://p6pq7a2yf5.execute-api.ap-southeast-1.amazonaws.com/test/getdata'
+URL = 'https://p6pq7a2yf5.execute-api.ap-southeast-1.amazonaws.com/test1/getdata'
 
 
 #read the local file
-data = pd.read_csv('sample_data.csv', sep=',')
+data = pd.read_csv('sample_data2.csv', sep=',')
 
 
 for i in data.index:

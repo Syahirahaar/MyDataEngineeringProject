@@ -1,0 +1,16 @@
+﻿CustomerID,review_id,flight_id,names,gender,customer_type,age,type_of_travel,class,flight_distance,seat_comfort,deptarrive_time_convenient,food_drink,gate_location,inflight_wifi,inflight_entertainment,online_support,ease_online_booking,onboard_service,legroom_service,baggage_handling,checkin_service,cleanliness,online_boarding,dept_delay_min,arrival_delay_min,timestamp,destination
+550-21-6848,41616,S6848,Izayah Effertz,M,Loyal Customer,67,Personal Travel,Eco,465,0,1,0,4,2,3,4,4,4,0,2,1,4,3,35,69,22/4/2021 15:34,Shanghai
+499-41-9834,97517,S9834,Jettie Nader,F,Loyal Customer,59,Personal Travel,Eco,474,0,1,0,4,4,3,3,3,3,0,3,1,3,1,0,0,16/4/2021 13:40,Shanghai
+607-61-6686,104229,S6686,Ewart Von,M,Loyal Customer,48,Personal Travel,Business,374,0,1,0,4,2,3,3,5,5,0,1,3,5,3,14,13,19/4/2021 7:41,Shanghai
+484-72-4929,64109,S4929,Malvina Daniel,,Loyal Customer,44,Personal Travel,Eco,365,0,1,0,4,3,4,3,5,5,0,5,4,5,3,0,0,9/4/2021 23:05,Shanghai
+183-30-4258,89298,S4258,Gus Emmerich,F,Loyal Customer,52,Personal Travel,Eco,351,0,1,0,4,4,3,4,5,5,0,5,3,5,4,0,0,5/4/2021 2:29,Shanghai
+807-70-7761,126264,S7761,Lasonya Zboncak,M,Loyal Customer,9,Personal Travel,Eco,2175,0,1,0,4,5,0,4,5,4,2,3,2,4,5,0,3,12/4/2021 16:23,Shanghai
+351-83-9277,83892,S9277,Federico Harris,M,Loyal Customer,69,Personal Travel,Eco,1428,0,1,0,4,4,0,4,4,4,4,3,2,3,4,0,0,12/4/2021 7:59,Shanghai
+152-37-5885,121950,S5885,Alwina Sauer,F,Loyal Customer,51,Personal Travel,Eco,986,0,1,0,4,5,0,5,5,1,5,3,1,3,5,2,12,,Shanghai
+469-84-4029,34809,S4029,Barbara Kutch,F,Loyal Customer,9,Personal Travel,Eco,1628,0,1,0,4,3,0,4,3,3,2,3,1,4,3,0,0,28/4/2021 4:47,Shanghai
+437-88-5286,30378,S5286,Vonnie Lemke,F,Loyal Customer,40,Personal Travel,Eco,4161,0,1,1,1,1,4,4,4,4,1,2,4,3,4,0,0,3/5/2021 14:50,Shanghai
+147-46-6440,93916,S6440,Joesph Hartmann,M,Loyal Customer,33,Personal Travel,Eco,3505,0,1,1,2,2,1,2,2,3,5,3,4,2,2,0,0,1/5/2021 0:41,Shanghai
+536-75-1550,112312,S1550,Robt Kling,F,Loyal Customer,18,Personal Travel,Eco,1948,0,1,1,3,2,1,2,2,3,2,2,1,2,2,15,10,22/4/2021 10:52,Shanghai
+884-74-8334,56317,S8334,Bridgett Stamm,F,Loyal Customer,23,Personal Travel,Eco Plus,1546,0,2,0,1,5,0,5,5,3,3,5,5,5,5,0,2,2/5/2021 4:41,Shanghai
+617-77-5424,62351,S5424,Cal Satterfield,F,Loyal Customer,49,Personal Travel,Eco Plus,2044,0,2,0,2,2,0,2,2,2,4,3,4,3,2,0,0,12/4/2021 6:25,Shanghai
+200-08-9659,56419,S9659,Campbell Marvin,M,Loyal Customer,39,Personal Travel,Eco Plus,2554,0,2,0,2,5,2,5,5,1,1,3,3,2,5,0,0,12/4/2021 3:12,Shanghai

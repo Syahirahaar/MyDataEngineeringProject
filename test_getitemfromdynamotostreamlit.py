@@ -1,10 +1,19 @@
 import boto3
 import botocore
+import os
+import configparser
 import json
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+
+config = configparser.ConfigParser()
+#config.read('/home/me/.aws/credentials')
+# config.read("dl.cfg")
+#
+# os.environ['AWS_ACCESS_KEY_ID']=config['AWS_ACCESS_KEY_ID']
+# os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS_SECRET_ACCESS_KEY']
 
 st.markdown('hoho')
 
@@ -58,14 +67,16 @@ cols = ["name", "host_name", "neighbourhood", "room_type", "price"]
 # # Display the chart
 # plt.show()
 
-access_key = 'AKIA6EBJ5GBWCVPKJ6VR'
-secret_key = '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'
+# access_key = 'AKIA6EBJ5GBWCVPKJ6VR'
+# secret_key = '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'
 
 #(aws_access_key_id=access_key, aws_secret_access_key = secret_key)
 
 def get_transactions(CustomerID,timestamp,dynamodb=None):
     #client = boto3.client('dynamodb',region_name='ap-southeast-1')
-    dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1',aws_access_key_id=access_key, aws_secret_access_key = secret_key)
+    #dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1',aws_access_key_id=access_key, aws_secret_access_key = secret_key)
+    dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1',aws_access_key_id=ACCESS_KEY, aws_secret_access_key= SECRET_KEY)
+
 
     #, endpoint_url="http://localhost:8000"
     # Specify the table to read from
@@ -89,7 +100,7 @@ def get_transactions(CustomerID,timestamp,dynamodb=None):
 
 
 if __name__ == '__main__':
-    device = get_transactions("100-098-765", "2021-10-22",)
+    device = get_transactions("096-40-9828", "25/4/2021 16:39")
     if device:
         #print("Get Device Data Done:")
         # Print the data read
