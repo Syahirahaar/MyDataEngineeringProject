@@ -18,13 +18,19 @@ secret_key = os.environ.get('secret_key')
 
 
 
-collect_numbers = lambda x : [int(i) for i in re.split("[^0-9]", x) if i != ""]
 
-numbers = st.text_input("PLease enter numbers")
-st.write(collect_numbers(numbers))
+#collect_numbers = lambda x : [int(i) for i in re.split("[^0-9]", x) if i != ""]
 
-fixed_numbers = st.multiselect("Please select numbers", [1, 2, 3, 4, 5])
-st.write(fixed_numbers)
+cust_id = st.text_input("PLease enter customer ID")
+#st.write(collect_numbers(numbers))
+#st.write(cust_id)
+
+ts = st.text_input("Please enter Timestamp")
+#st.write(ts)
+
+
+# fixed_numbers = st.multiselect("Please select numbers", [1, 2, 3, 4, 5])
+# st.write(fixed_numbers)
 
 
 
@@ -46,25 +52,19 @@ def get_transactions(CustomerID,timestamp,dynamodb=None):
     else:
         return response['Item']
 
-        # try:
-        #     response = devices_table.get_item(
-        #         Key={'TransactionType_OriginCountry': TransactionType_OriginCountry, 'Date': Date})
-        # except botocore.exceptions.ClientError as e:
-        #     print(e.response['Error']['Message'])
-        # else:
-        #     return response['Item']
 
 
 if __name__ == '__main__':
-    device = get_transactions("096-40-9828", "25/4/2021 16:39",)
+    #device = get_transactions("096-40-9828", "25/4/2021 16:39",)
+    device = get_transactions(cust_id, ts,)
     if device:
         #print("Get Device Data Done:")
         # Print the data read
         #print(device)
-        st.write("Get Device Data Done:")
-        st.write(device)
-        a = pd.DataFrame(device.items(), columns=['header','Details'])
-        st.write(a)
+        #st.write("Get Device Data Done:")
+        # st.write(device)
+        # a = pd.DataFrame(device.items(), columns=['header','Details'])
+        # st.write(a)
 
         new = pd.DataFrame.from_dict(device, orient='index')
         st.write(new)
