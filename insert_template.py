@@ -6,7 +6,7 @@ URL = 'https://p6pq7a2yf5.execute-api.ap-southeast-1.amazonaws.com/test1/getdata
 
 
 #read the local file
-data = pd.read_csv('sample_data5.csv', sep=',')
+data = pd.read_csv('sample_final.csv', sep=',')
 
 
 for i in data.index:
