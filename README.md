@@ -4,26 +4,20 @@ This Project will show how satisfied the customer towards services provided by a
 
 # Introduction & Goals
 - In order for you to understanding how it works, you need to go through the process by yourself. Here, I challenged myself to create data processing pipeline in both   method which are Batch and Stream Processing.
-- Orient this section on the Table of contents
-- Objective of the project :
+
+### Objective of the project :
 1 . Study and understand data nature and how it can be process to make useful for the data engineer.
 2 . Build Storage pipeline and use batch and Stream processing method pipeline.
-3 . Experience real-life reality situation
+3 . Experience real-life handling data using Amazon Services
 4 . Knowing what happened behind the beautiful graphs/chart
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second columnFirst Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-- Write this like an executive summary
-  - Passenger's rating of services provided by airline
-  - The tools that will be used for this project are Python,AWS (S3,Lambda,RDS,API gateway) on atom platform
-  - Tools stated above will be including along the way in the pipeline including preprocessing the data, uploading data into database, triggered lambda to run jobs.
-  - Once you are finished add the conclusion here as well
+### The expected outcome from this project :
+- Complete pipeline for stream processing
+- Complete pipeline for batch processing
+- Passenger's rating of services provided by airline
+- The tools that will be used for this project are Python,AWS (S3,Lambda,RDS,API gateway) on atom platform
+- Tools stated above will be including along the way in the pipeline including preprocessing the data, uploading data into database, triggered lambda to run jobs.
+- Visualization are being shown through streamlit for stream processing, and powerBI for batch processing.
 
 # Contents
 
@@ -47,14 +41,13 @@ Content in the first column | Content in the second column
 
 
 # The Data Set
-- Explain the data set
-  The dataset chosen is about Passenger's satisfaction based on services provided. Here are the snapshot for the original verison of data, it is quite complete but stll need enrichment for further analysis. The dataset is accessed from kaggle, here is the link https://www.kaggle.com/sjleshrac/airlines-customer-satisfaction. I've attached the airline.csv in my Github folders.
+- The dataset chosen is about Passenger's satisfaction based on services provided. Here are the snapshot for the original verison of data, it is quite complete but stll need enrichment for further analysis. The dataset is accessed from kaggle, here is the link https://www.kaggle.com/sjleshrac/airlines-customer-satisfaction. I've attached the airline.csv in my Github folders.
 
   [ space for df. head()]
 
 
 - Why did you choose it?
-- I'm interested to explore airline's related data. In my upcoming project, I might working with airline project. Thus, I think this is a good start for me.
+- I'm interested to explore airline's related data. In my upcoming project, I might working  with airline project. Thus, I think this is a good start for me.
 - What do you like about it?
 - The data is a lot, and has meaningful columns for analysis
 - What is problematic?
