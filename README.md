@@ -139,6 +139,12 @@ In this project, medium storage that being used are S3, DynamoDB and Redshift.
 For Stream Processing, the viualizations can be achieved through fetching data from DynamoDB to Streamlit. It needs some configuration from IAM too. While for batch processing, the data took from Redshift to PowerBI using JDBC.
 
 ## Batch Processing
+
+
+## store
+![image](https://user-images.githubusercontent.com/48470854/125758392-5c3e805d-bb27-497a-8f56-dd279e3aedfc.png)
+
+## Processing
 ## Visualizations
 
 # Demo
