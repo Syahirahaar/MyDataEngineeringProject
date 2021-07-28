@@ -142,9 +142,15 @@ For Stream Processing, the viualizations can be achieved through fetching data f
 
 
 ## store
+Let's assume that the S3 bucket define below are th place where user will insert the file here. The file will be in .csv format. 
+Once the data available in this bucket,initial processing is performed by AWS Lambda everyday 
 ![image](https://user-images.githubusercontent.com/48470854/125758392-5c3e805d-bb27-497a-8f56-dd279e3aedfc.png)
 
 ## Processing
+In the processing stage, aws glue has been used to process 
+![image](https://user-images.githubusercontent.com/48470854/127276722-0b549435-e10d-4764-bec4-719235ddcb7b.png)
+
+
 ## Visualizations
 
 # Demo
