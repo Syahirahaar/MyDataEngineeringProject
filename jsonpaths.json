@@ -1,0 +1,34 @@
+{
+  "jsonpaths": [
+    "$.customerid",
+    "$.review_id",
+    "$.flight_id",
+    "$.names",
+    "$.gender",
+    "$.customer_type",
+    "$.age",
+    "$.type_of_travel",
+    "$.class",
+    "$.flight_distance",
+    "$.seat_comfort",
+    "$.deptarrive_time_convenient",
+    "$.food_drink",
+    "$.gate_location",
+    "$.inflight_wifi",
+    "$.inflight_entertainment",
+    "$.online_support",
+    "$.ease_online_booking",
+    "$.onboard_service",
+    "$.legroom_service",
+    "$.baggage_handling",
+    "$.checkin_service",
+    "$.cleanliness",
+    "$.online_boarding",
+    "$.dept_delay_min",
+    "$.arrival_delay_min",
+    "$.timestamp",
+    "$.destination"
+
+
+    ]
+}

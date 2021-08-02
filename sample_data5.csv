@@ -1,0 +1,21 @@
+,Unnamed: 0,CustomerID,review_id,flight_id,names,gender,customer_type,age,type_of_travel,class,flight_distance,seat_comfort,deptarrive_time_convenient,food_drink,gate_location,inflight_wifi,inflight_entertainment,online_support,ease_online_booking,onboard_service,legroom_service,baggage_handling,checkin_service,cleanliness,online_boarding,dept_delay_min,arrival_delay_min,timestamp,destination
+11862,11862,732-63-1166,44384,S1166,Ozell Ritchie,M,Loyal Customer,12.0,Personal Travel,Eco,2427.0,3.0,3.0,2.0,3.0,3.0,4.0,4.0,4.0,4.0,4.0,4.0,5.0,4.0,4.0,88.0,83.0,11/4/2021 22:11,Shanghai
+126214,126214,607-10-7751,20604,S7751,Althea Rolfson,F,Loyal Customer,46.0,Business travel,Business,683.0,4.0,4.0,3.0,4.0,2.0,5.0,4.0,5.0,5.0,5.0,5.0,3.0,5.0,4.0,15.0,0.0,3/4/2021 19:08,Shanghai
+33697,33697,422-30-0508,786,S0508,Jacalyn Hodkiewicz,M,Loyal Customer,23.0,Personal Travel,Eco Plus,1547.0,4.0,3.0,4.0,3.0,1.0,4.0,4.0,1.0,3.0,4.0,4.0,1.0,3.0,1.0,0.0,11.0,7/4/2021 23:51,Shanghai
+23319,23319,660-83-4279,108639,S4279,Kirsten Conn,F,Loyal Customer,22.0,Personal Travel,Eco,1183.0,3.0,3.0,3.0,3.0,2.0,3.0,2.0,2.0,2.0,4.0,4.0,4.0,3.0,2.0,0.0,0.0,20/4/2021 19:08,Shanghai
+68102,68102,839-18-9198,104251,S9198,Haylee Abshire,F,Loyal Customer,43.0,Business travel,Business,1447.0,1.0,2.0,2.0,2.0,5.0,4.0,4.0,1.0,1.0,1.0,1.0,3.0,1.0,1.0,14.0,9.0,25/4/2021 22:22,Shanghai
+1840,1840,113-94-1695,23333,S1695,Dell Hahn,M,Loyal Customer,33.0,Personal Travel,Eco,2169.0,1.0,2.0,1.0,3.0,5.0,1.0,5.0,5.0,2.0,4.0,3.0,2.0,3.0,5.0,9.0,5.0,24/4/2021 23:15,Shanghai
+99866,99866,561-51-3902,42177,S3902,Giovanny Adams,F,Loyal Customer,31.0,Business travel,Business,2251.0,3.0,3.0,3.0,3.0,4.0,4.0,4.0,4.0,1.0,5.0,3.0,1.0,5.0,4.0,66.0,68.0,2/5/2021 11:07,Shanghai
+83943,83943,667-87-0633,126846,S0633,Madie Schmidt,M,Loyal Customer,39.0,Business travel,Business,2965.0,3.0,3.0,2.0,3.0,5.0,3.0,3.0,3.0,3.0,3.0,3.0,2.0,3.0,2.0,0.0,0.0,21/4/2021 15:07,Shanghai
+113883,113883,045-26-2447,11830,S2447,Daren Rice,M,Loyal Customer,63.0,Business travel,Eco,88.0,5.0,3.0,3.0,3.0,4.0,5.0,1.0,5.0,5.0,5.0,5.0,2.0,5.0,4.0,0.0,5.0,16/4/2021 14:37,Shanghai
+11700,11700,053-64-9440,99160,S9440,Noreta Johnston,F,Loyal Customer,49.0,Personal Travel,Eco,281.0,1.0,1.0,1.0,1.0,2.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0,27/4/2021 12:26,Shanghai
+127031,127031,586-95-9263,108952,S9263,Eartha Vandervort,M,Loyal Customer,60.0,Business travel,Business,3665.0,2.0,2.0,2.0,2.0,4.0,5.0,4.0,5.0,5.0,5.0,5.0,3.0,5.0,5.0,35.0,36.0,14/4/2021 13:06,Shanghai
+14555,14555,238-19-7911,89336,S7911,Icie Brakus,M,Loyal Customer,12.0,Personal Travel,Eco,1833.0,2.0,4.0,2.0,3.0,2.0,3.0,3.0,2.0,3.0,3.0,3.0,3.0,2.0,3.0,135.0,119.0,18/4/2021 3:08,Shanghai
+119690,119690,009-70-1752,76699,S1752,Zula Klein,M,Loyal Customer,43.0,Business travel,Business,356.0,2.0,2.0,2.0,2.0,3.0,4.0,4.0,5.0,5.0,5.0,5.0,3.0,5.0,3.0,0.0,0.0,4/4/2021 19:08,Shanghai
+71777,71777,247-12-2725,104291,S2725,Kelly Goodwin,M,Loyal Customer,57.0,Business travel,Business,475.0,2.0,2.0,2.0,2.0,5.0,5.0,4.0,2.0,2.0,2.0,2.0,3.0,2.0,5.0,2.0,0.0,29/4/2021 6:42,Shanghai
+106080,106080,092-94-7378,113430,S7378,Camisha Jacobson,F,Loyal Customer,52.0,Business travel,Business,3715.0,5.0,5.0,5.0,5.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,3.0,4.0,5.0,17.0,11.0,4/4/2021 21:33,Shanghai
+40863,40863,598-52-5827,70688,S5827,Maximus Schamberger,F,disloyal Customer,37.0,Business travel,Business,2868.0,1.0,0.0,0.0,1.0,3.0,0.0,3.0,3.0,5.0,3.0,5.0,4.0,4.0,3.0,28.0,41.0,17/4/2021 23:56,Shanghai
+113035,113035,135-28-6197,96641,S6197,Echo Effertz,M,Loyal Customer,39.0,Business travel,Business,248.0,2.0,2.0,3.0,2.0,5.0,4.0,4.0,4.0,4.0,5.0,4.0,5.0,4.0,5.0,0.0,0.0,13/4/2021 22:02,Shanghai
+16133,16133,640-20-1573,51612,S1573,Nile Hodkiewicz,F,Loyal Customer,20.0,Personal Travel,Eco,1057.0,2.0,2.0,2.0,2.0,4.0,4.0,4.0,4.0,4.0,4.0,2.0,4.0,2.0,4.0,44.0,33.0,21/4/2021 18:01,Shanghai
+24784,24784,073-46-4463,87612,S4463,Sharon Maggio,M,Loyal Customer,42.0,Personal Travel,Eco,493.0,2.0,2.0,2.0,2.0,5.0,5.0,4.0,5.0,5.0,5.0,5.0,3.0,5.0,3.0,0.0,0.0,18/4/2021 5:26,Shanghai
+17370,17370,268-06-4454,57187,S4454,Mirtie Swaniawski,F,Loyal Customer,20.0,Personal Travel,Eco,1931.0,3.0,3.0,3.0,3.0,3.0,5.0,4.0,4.0,4.0,4.0,4.0,3.0,4.0,4.0,0.0,0.0,15/4/2021 13:55,Shanghai
