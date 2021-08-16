@@ -90,11 +90,8 @@ I have been using different visualization tool for both streaming & batch proces
 
 ## Stream Processing
 For ease of implementation and testing, we will build the data pipeline in stages. There are 5 stages and these stages shown below  
-![image](https://user-images.githubusercontent.com/48470854/122516888-e813de80-d041-11eb-9b91-1098ab88895c.png)
 
-- Explain the pipelines for processing that you are building
-
-<img width="353" alt="pipeline" src="https://user-images.githubusercontent.com/48470854/117396308-3fe00580-af2c-11eb-8bd5-e6f04acc5c85.png">
+![image](https://user-images.githubusercontent.com/48470854/129534131-34d256d7-2bc5-4fbf-94e8-1e15df22c723.png)
 
 
 Pre-connect function
@@ -103,6 +100,8 @@ the code to send the data into API using AWS API Gateway.
 
 Before we send the data into API,there are few things need to be done in order to makesure that can be used optimizely.
 1) I used faker library to complete the data.
+
+
 
 ### Connect Data Stream
 In this stages, an API has been initiated and ready to receive data from local csv file. REST API GET method has been initiated to send the response based on the users's request while POST method is for collecting user's data.In the ingestion process, JSON validation is included in Lambda function (WriteKinesis) before the data flowed to Kinesis Stream.
@@ -126,6 +125,8 @@ Kinesis- Kinesis firehose - Redshift stream: This stream pipeline is used to sen
 ### Processing Data Stream
 
 Using lambda, I prepared the code to clean data into 5 columns that has been defined in dynamodb for airline customer. Among the activities done here are pemoving unrelated data from certain columns. By the way, the data are in dictionary form.
+
+In order to makesure that only qualified data inserted into the database. I have included counter measure of validating in in the early stage as early as before the data goes into Kinesis Stream. 
 
 ### Storing Data Stream
 
