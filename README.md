@@ -172,7 +172,7 @@ Column List
 
 
 3. Details of process :
-   1. Preparing Data
+   1. [Preparing Data](https://github.com/Syahirahaar/MyDataEngineeringProject/tree/main/Preparations)
    2. Data Ingestion
    3. Data Cleaning
    4. Data Processing & Storage
