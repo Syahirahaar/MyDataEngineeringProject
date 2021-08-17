@@ -17,7 +17,7 @@ Columns that are added to give result in insghtful data
 
 
 4. Merging Process between original file and fake data ( snapshot )
-5. 
+
 ![image](https://user-images.githubusercontent.com/48470854/129677666-2289aca3-d8ee-41ca-9373-60546cf2773d.png)
 
 
@@ -25,5 +25,7 @@ Result :
 
 ![image](https://user-images.githubusercontent.com/48470854/129677574-7f079a50-574f-4e7a-a88f-d3a798cb5e0a.png)
 
+
+Readily file to use : final_result.csv
 
 
