@@ -158,17 +158,17 @@ Column List
 
 
 ## Stream Processing
-1. The layout of streaming process
+1. The layout of stream Processing
 ![image](https://user-images.githubusercontent.com/48470854/129534131-34d256d7-2bc5-4fbf-94e8-1e15df22c723.png)
 
 2.The flow for Streaming Process
-    a.  CSV will be pulled into the pipeline by uploading it to API post link through atom
-    b. The data that go through API and load it into lambda function will be processed by going through validation to make sure data inserted are in accepted format
-    c. After going through the validation process, the data are readily go to Kinesis under stream name APIData
-    d. The data will go through two separate flows. First it will go to S3 and will be saved there.Second, it will go to a buffer called Kinesis for further process.
-   e. When the data is readily on the stream, it will go to DynamoDB(storage) and distributed into a format set using Lambda function.
-   f. All the data that is already parked into dynamoDB, it can be connected to Visualization/ Bi tools. In this case, I’m using Streamlit.
-   g. End User may use flight Id to query the data that need to be used. 
+    -  CSV will be pulled into the pipeline by uploading it to API post link through atom
+    - The data that go through API and load it into lambda function will be processed by going through validation to make sure data inserted are in accepted format
+    - After going through the validation process, the data are readily go to Kinesis under stream name APIData
+    - The data will go through two separate flows. First it will go to S3 and will be saved there.Second, it will go to a buffer called Kinesis for further process.
+   - When the data is readily on the stream, it will go to DynamoDB(storage) and distributed into a format set using Lambda function.
+   - All the data that is already parked into dynamoDB, it can be connected to Visualization/ Bi tools. In this case, I’m using Streamlit.
+   - End User may use flight Id to query the data that need to be used. 
 
 
 3. Details of process :
@@ -183,6 +183,28 @@ Column List
 
 
 ## Batch Processing
+
+1. The layout of Batch Processing
+
+![batch](https://user-images.githubusercontent.com/48470854/129659609-c5943f78-fa14-406d-acfe-1711d29acfee.jpg)
+
+2.The flow for Streaming Process
+    -  S3 bucket are initiated to be the storage for CSV ( name : bulkimport-sy)
+    -  CSV files are uploaded into the S3 bucket mentioned above
+    -  The, AWS Glue used to run the job
+          - The crawler are created for crawling the S3 bucket and redshift
+          - Then, the crawler are started and will create two folder that show that the table at s3 and redshift are already mapped and have same mapping ( check this sentence)
+    - AWS Glue Jobs created to do the processing part of inserting the data into Redshift (storage). Here SparkJob also being used
+    - For visualization, I connect the Redshift to PowerBI using ODBC
+
+   
+  
+3. Details of process :
+   1. Data Ingestion To S3
+   2. Data Ingestion To Redshift
+   3. Data Processing & Storage
+   4. Visualization
+
 
 
 ## store
