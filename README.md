@@ -42,25 +42,51 @@ This Project will show how satisfied the customer towards services provided by a
 
 # The Data Set
 
-- The dataset chosen is about Passenger's satisfaction based on services provided. Here are the snapshot for the original verison of data, it is quite complete but stll need enrichment for further analysis. The dataset is accessed from kaggle, here is the link https://www.kaggle.com/sjleshrac/airlines-customer-satisfaction. I've attached the airline.csv in my Github folders.
+- The dataset chosen is about Passenger's satisfaction based on services provided. Here are the snapshot for the original verison of data, it is quite complete but still need enrichment for further analysis. The dataset is accessed from kaggle.
 
-  [ space for df. head()]
-
-- Explain the data set
-  The dataset chosen is about Passenger's satisfaction based on services provided. Here are the snapshot for the original verison of data, it is quite complete but stll need enrichment for further analysis. The dataset is accessed from kaggle, here is the link https://www.kaggle.com/sjleshrac/airlines-customer-satisfaction. I've attached the airline.csv in my Github folders.
+Data Source : https://www.kaggle.com/sjleshrac/airlines-customer-satisfaction
+This is original dataset which contain 23 columns
+  ![image](https://user-images.githubusercontent.com/48470854/129648458-1eb7117f-a850-43db-b819-7228687b0b22.png)
   
+After Data Enrichment process applied upon the dataset. These are the snapshot of dataset after treated :
+Details : I used Python Faker library to complete enrichment process. You may refer to [PLEASE LINK THE FILE HERE]
+  1. Generating fake data 
+  2. Cleaning & Merging Process using Jupyter Notebook
+  3. File involved ( generate_fake_data.csv & Invistico_Airline.csv )z
+
+| Column | Description |
+| --- | --- |
+| CustomerID | Uniquely assigned 11 character combined with ‘-’ symbol No negative number exist Own by each customer |
+| review_id | Uniquely assigned Own by each customer that create review for the flight |
+| flight_id | Uniquely assigned It comes with letter ‘S’ and append by flight number It will comes with customer id and review id |
+| names | Characters |
+| gender | Consist of character of  F: female and M: male |
+| customer_type | Consist of value of Loyal Customer / disloyal Customer |
+| age | Only consist of Integer |
+| type_of_travel | Consist of value Personal/Business |
+| class | Consist of value Business/Eco Determine type of class passengers choose |
+| flight_distance | Consist of integer value The unit is miles |
+| seat_comfort | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| deptarrive_time_convenient | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| food_drink | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| gate_location | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| inflight_wifi | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| inflight_entertainment | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| online_support | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| ease_online_booking | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| onboard_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| legroom_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| baggage_handling | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| checkin_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer|
+| cleanliness | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer|
+| online_boarding | Show file differences that **haven't been** staged |
+| dept_delay_mean | Minutes delay during arrival Unit : minutes |
+| arrival_delay_min | Minutes delay during arrival Unit : minutes|
+| timestamp | Time recorded during passenger creating the review |
+| destination | Destination of passengers that belong to the review |
+
   ![colummn](https://user-images.githubusercontent.com/48470854/125216516-fe375680-e2f0-11eb-931f-211a418af95b.jpg)
   
-  ![colummn](https://user-images.githubusercontent.com/48470854/125216522-068f9180-e2f1-11eb-8da2-80926f3ef6ac.jpg)
-
-
-- Why did you choose it?
-- I'm interested to explore airline's related data. In my upcoming project, I might working  with airline project. Thus, I think this is a good start for me.
-- What do you like about it?
-- The data is a lot, and has meaningful columns for analysis
-
-- What is problematic?
-  The data has no features that makes it unique, thus an enrichment process needed to make it self-explained. I'm using FakerLibrary to add columns that will add value to the dataset. 
 
 
 # Used Tools
@@ -69,20 +95,29 @@ This Project will show how satisfied the customer towards services provided by a
 - As beginner, I found help by asking my coach and collegue, googling all over interent and reading AWS Documentation that are really helpful for my project.
 
 ## Connect
-In the scenario of stream processing, a data pipeline will pull data from an API and send data to the buffer.AWS API Gateway POST method is used to pull data from the client.
-Every time data reach to the API endpoint, it will trigger the lambda function and send data to AWS Kinesis.
+- API Gateway :
+      - POST ( Take data to API url)
+      - GET ( send data to Lambda Function for validation process)
 
 ## Buffer
-In buffer stage, the services that being used are AWS Kinesis & Firehose. For Streaming processing, Kinesis stream being used to allow data that has been triggered from lambda to go sit in kinesis stream ro queue the data, The data will lineup in Kinesis every time the API endpoint trigger the lambda function in the AWS.The Kinesis firehose is used to send the data inside the warehouse.
+- AWS Kinesis Data Streams
+- AWS Kinesis Firehose
 
 ## Processing
-AWS Lambda is used to perform stream processing at different stages.The lambda is used to send data from API to Kinesis, Kinesis to S3 bucket, Kinesis to DynamoDB, Kinesis to Redshift
+- AWS Lambda functions
+- boto3
+- Python3 used in Lambda functions
+- AWS Glue -> establish data catalog in Streaming process, also performing ETL between S3 and Redshift
+
 
 ## Storage
-For storage,we need a place to put data so that it can be accessible for reference or even to re-use back the data. It can be holding raw/processed data. What are being used are S3,DynamoDB and Redshift. S3 stands for simple storage service, it is like data lake in AWS environment.The method I'm using is keeping the data in JSON format.Secondly, DynamoDB is a NoSQL database and saving the data in wide column format. AWS Redshift is datawarehouse that allowing us to create schema inside its cluster and saved streamed data in a table.   
+- AWS S3 bucket 
+- AWS Redshift
+- AWS DynamoDB
 
 ## Visualization
-I have been using different visualization tool for both streaming & batch processing. For streaming, I used streamlit app to visualize and fetch from DynamoDB. Batch Processing is using PowerBI to visualize data from Redshift. 
+- Streamlit -> an application used to visualize data from database. Specifically connected to DynamoDB
+-  Microsoft PowerBI -> Connected to Redshift
 
 
 # Pipelines
