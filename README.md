@@ -173,10 +173,10 @@ Column List
 
 3. Details of process :
    1. [Preparing Data](https://github.com/Syahirahaar/MyDataEngineeringProject/tree/main/Preparations)
-   2. Data Ingestion
-   3. Data Cleaning
-   4. Data Processing & Storage
-   5. Visualization
+   2. [Data Ingestion](https://github.com/Syahirahaar/MyDataEngineeringProject/tree/main/Stream%20Processing/ingestion)
+   3. [Data Cleaning/Validation](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/ingestion/WriteKinesis.py)
+   4. [Data Processing & Storage](https://github.com/Syahirahaar/MyDataEngineeringProject/tree/main/Stream%20Processing/processing%20%26%20storage)
+   5. [Visualization](https://github.com/Syahirahaar/MyDataEngineeringProject/tree/main/Stream%20Processing/visualization)
   
 
 
