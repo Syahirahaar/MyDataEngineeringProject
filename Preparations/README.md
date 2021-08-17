@@ -11,7 +11,7 @@ Snapshot of generate_data_usingfaker.py
 
 ![image](https://user-images.githubusercontent.com/48470854/129677046-ee8a003e-724c-49f5-97d7-c16d4b4a91c4.png)
 
-Columns that are added to give result in insghtful data
+Columns that are added to give result in insightful data
 
 ![image](https://user-images.githubusercontent.com/48470854/129677382-f4d13bd2-148b-4163-8655-cf079884d01c.png)
 
