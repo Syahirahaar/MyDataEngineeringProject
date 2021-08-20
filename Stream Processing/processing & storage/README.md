@@ -42,23 +42,54 @@ Pick a suitable name for your table
    - Port range - 0-65535,
    - Source - Choose the security groups
 
+![image](https://user-images.githubusercontent.com/48470854/130172208-a856f24d-52a7-463f-ae6b-23b197ff91bd.png)
+
 3. At Network and security settings, set Publicly accessible to 'Enabled'
 
 ![image](https://user-images.githubusercontent.com/48470854/130175138-72a0de4c-7478-405e-81cc-eb69bbfc44f0.png)
+
+4. Create a table in the cluster in query editor
+
+![image](https://user-images.githubusercontent.com/48470854/130176505-4851ab31-b766-430d-b803-3891c2762a4d.png)
+
    
-
-![image](https://user-images.githubusercontent.com/48470854/130172208-a856f24d-52a7-463f-ae6b-23b197ff91bd.png)
-
-4.
+5. Set Redshift roles in IAM to read/write data in S3 and read data in Kinesis
 
 
 
-
-
-
-2. After table crated and configured as above. You may see the 
+6. After table crated and configured as above. You may see the existing query 
 
 ![image](https://user-images.githubusercontent.com/48470854/130171465-494fa175-abbf-4ad4-b8d7-4aaf83d557fc.png)
+
+7. After created the table, you can use below command to check the error if the data is not loaded
+
+![image](https://user-images.githubusercontent.com/48470854/130178393-820ab5fa-2a79-4718-86a6-f6c328a08e23.png)
+
+   - Below are the example queries that can be used to check if any errors arised
+
+![image](https://user-images.githubusercontent.com/48470854/130178269-5a6264c0-1574-46e8-835e-6d91f5bc6853.png)
+
+
+
+
+
+8. Create S3 bucket (Intermediate Storage)
+Upload [jsonpaths.json](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/visualization/jsonpaths.json) file ( for mapping and detect json string object ) in the S3 bucket
+
+
+8. Creating Kinesis Firehose and connections to the Redshift
+     - Create a delivery stream
+     - Set the source : Kinesis Data Stream
+     - Destination : Redshift (Put down info,about the cluster)
+     - Intermediate S3 destination : Choose S3 bucket created for intermediate storage
+     - COPY command : Copy & paste [copy command](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/processing%20%26%20storage/copycommand.txt) into Intermediate bucket 
+
+
+ 
+
+
+
+
 
 
 
