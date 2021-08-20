@@ -25,7 +25,9 @@
 
 
 4. Run Crawlers
-5. Add jobs in ETL  
+   - You can check here whether the mapping process's status
+  
+6. Add jobs in ETL  
     - Name : Give ETL name 
     - IAM : Access in S3 and Redshift, and Glue service role
     - Type : Spark
