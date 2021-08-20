@@ -67,13 +67,10 @@ def lambda_handler(event, context):
     if method == 'GET':
         # TODO: write code...
         dynamo_client = boto3.client('dynamodb')
-
         im_customerid = event['params']['querystring']['customer_id']
         print(im_customerid)
         response = dynamo_client.get_item(TableName = 'Customers', Key = {'customer_id':{'N': im_customerid}})
         print(response['Item'])
-
-
 
         return {
             'statusCode': 200,
@@ -81,9 +78,6 @@ def lambda_handler(event, context):
            }
 
     elif method == 'POST':
-
-
-
 
         p_record = event['body-json']
         recordstring = json.dumps(p_record)
@@ -93,11 +87,7 @@ def lambda_handler(event, context):
         StreamName='APIData',
         Data=recordstring,
         PartitionKey='string'
-
-
-
-
-            )
+    )
 
         jsonData = json.loads(recordstring)
         isValid = validateJson(jsonData)
@@ -108,17 +98,11 @@ def lambda_handler(event, context):
              }
         else:
             print('Given JSON is invalid',jsonData)
-
-
             mykey1 = 'error message' + timestampStr + '.txt'
             response = s3_client.put_object(Body=recordstring, Bucket='test1sy', Key= mykey1)
-
-
             return {
 
                 'body': json.dumps(p_record)
-
-
              }
     else:
         return {
