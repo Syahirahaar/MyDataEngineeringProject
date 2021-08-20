@@ -9,7 +9,13 @@ For visualizaton, I'm using Streamlit app to enable interaction between the data
 
 The file can be found here [streamlit file](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/visualization/test_tostreamlit3.py)
 
-Topic 10 Visualization Pipeline Redshift Data Warehouse
+Streamlit app
+
+![image](https://user-images.githubusercontent.com/48470854/130242541-7a5368fc-b9f9-48a2-83fc-eba0b38cc2f8.png)
+
+**disclaimer : I'm still improving on how to make the web work by just inputting certain keywords that can display the answers**
+
+# Topic 10 : Visualization Pipeline Redshift Data Warehouse
 
 In this topic, I choose to connect the Redshift to Microsoft PowerBI. 
 
@@ -23,18 +29,16 @@ In this topic, I choose to connect the Redshift to Microsoft PowerBI.
 
 PowerBI > Get data > Redshift > enter information as below :
 
+![image](https://user-images.githubusercontent.com/48470854/130233423-ceff6f4c-bf14-4c3a-adae-f6900e74de81.png)
+
 Server : Endpoint at Redshift's cluster dahsboard
 
 ![image](https://user-images.githubusercontent.com/48470854/130233766-c04713a2-7d04-4e57-b536-5b09339106f5.png)
 
+
 PowerBI dashboard example
 
 ![image](https://user-images.githubusercontent.com/48470854/130241502-81ee2ce5-da2f-44e8-a598-5038e1e1a98a.png)
-
-
-
-![image](https://user-images.githubusercontent.com/48470854/130233423-ceff6f4c-bf14-4c3a-adae-f6900e74de81.png)
-
 
 
 
