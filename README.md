@@ -59,20 +59,20 @@ Column List
 | type_of_travel | Consist of value Personal/Business |
 | class | Consist of value Business/Eco Determine type of class passengers choose |
 | flight_distance | Consist of integer value The unit is miles |
-| seat_comfort | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| deptarrive_time_convenient | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| food_drink | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| gate_location | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| inflight_wifi | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| inflight_entertainment | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| online_support | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| ease_online_booking | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| onboard_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| legroom_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| baggage_handling | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| checkin_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer|
-| cleanliness | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer|
-| online_boarding | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| seat_comfort | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| deptarrive_time_convenient | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| food_drink | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| gate_location | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| inflight_wifi | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| inflight_entertainment | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| online_support | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| ease_online_booking | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| onboard_service | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| legroom_service | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| baggage_handling | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| checkin_service | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer|
+| cleanliness | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer|
+| online_boarding | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
 | dept_delay_mean | Minutes delay during arrival Unit : minutes |
 | arrival_delay_min | Minutes delay during arrival Unit : minutes|
 
@@ -100,20 +100,20 @@ Column List
 | type_of_travel | Consist of value Personal/Business |
 | class | Consist of value Business/Eco Determine type of class passengers choose |
 | flight_distance | Consist of integer value The unit is miles |
-| seat_comfort | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| deptarrive_time_convenient | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| food_drink | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| gate_location | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| inflight_wifi | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| inflight_entertainment | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| online_support | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| ease_online_booking | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| onboard_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| legroom_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| baggage_handling | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
-| checkin_service | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer|
-| cleanliness | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer|
-| online_boarding | Factors that influence level of customer’s satisfaction Customer may rate from 0 to 5 Integer |
+| seat_comfort | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| deptarrive_time_convenient | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| food_drink | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| gate_location | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| inflight_wifi | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| inflight_entertainment | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| online_support | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| ease_online_booking | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| onboard_service | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| legroom_service | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| baggage_handling | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
+| checkin_service | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer|
+| cleanliness | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer|
+| online_boarding | Factors that influence level of customer’s satisfaction, Customer may rate from 0 to 5 Integer |
 | dept_delay_mean | Minutes delay during arrival, Unit : minutes |
 | arrival_delay_min | Minutes delay during arrival, Unit : minutes|
 | timestamp | Time recorded during passenger creating the review |
