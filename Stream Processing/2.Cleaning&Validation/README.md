@@ -20,6 +20,9 @@ Reason Doing Validation
 
 ** future : insert comparison of output for with validation and w/o validation **
 
+Reference 
+  - WriteKinesis.py are at 3.processing&storage folder
+
 
 
 
