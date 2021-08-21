@@ -161,7 +161,7 @@ Column List
 1. The layout of stream Processing
 ![image](https://user-images.githubusercontent.com/48470854/129534131-34d256d7-2bc5-4fbf-94e8-1e15df22c723.png)
 
-2.The flow for Streaming Process
+2. The flow for Streaming Process
 
     - CSV will be pulled into the pipeline by uploading it to API post link through atom
     - The data that go through API and load it into lambda function will be processed by going through validation to make sure data inserted are in accepted format
@@ -191,13 +191,14 @@ Column List
 ![image](https://user-images.githubusercontent.com/48470854/130307558-be18e1c2-dfa2-413d-9940-c318f2ae6bfd.png)
 
 2.The flow for Streaming Process
+
     -  S3 bucket are initiated to be the storage for CSV ( name : bulkimport-sy)
     -  CSV files are uploaded into the S3 bucket mentioned above
     -  The, AWS Glue used to run the job
           - The crawler are created for crawling the S3 bucket and redshift
           - Then, the crawler are started and will create two folder that show that the table at s3 and redshift are already mapped and have same mapping ( check this sentence)
     - AWS Glue Jobs created to do the processing part of inserting the data into Redshift (storage). Here SparkJob also being used
-    - For visualization, I connect the Redshift to PowerBI using ODBC
+    - For visualization, I connect the Redshift to PowerBI using Endpoint
 
    
   
