@@ -26,6 +26,6 @@ Result :
 ![image](https://user-images.githubusercontent.com/48470854/129677574-7f079a50-574f-4e7a-a88f-d3a798cb5e0a.png)
 
 
-Readily file to use : final_result.csv
+Readily file to use : [final_result.csv](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Preparations/final_result.csv)
 
 
