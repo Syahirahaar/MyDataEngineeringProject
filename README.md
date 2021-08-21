@@ -162,13 +162,15 @@ Column List
 ![image](https://user-images.githubusercontent.com/48470854/129534131-34d256d7-2bc5-4fbf-94e8-1e15df22c723.png)
 
 2.The flow for Streaming Process
-    -  CSV will be pulled into the pipeline by uploading it to API post link through atom
+
+    - CSV will be pulled into the pipeline by uploading it to API post link through atom
     - The data that go through API and load it into lambda function will be processed by going through validation to make sure data inserted are in accepted format
     - After going through the validation process, the data are readily go to Kinesis under stream name APIData
-    - The data will go through two separate flows. First it will go to S3 and will be saved there.Second, it will go to a buffer called Kinesis for further process.
-   - When the data is readily on the stream, it will go to DynamoDB(storage) and distributed into a format set using Lambda function.
-   - All the data that is already parked into dynamoDB, it can be connected to Visualization/ Bi tools. In this case, I’m using Streamlit.
-   - End User may use flight Id to query the data that need to be used. 
+    - The data will go through two separate flows. First it will go to S3 and will be saved there.Second, it will go to a buffer called Kinesis for further process
+    - When the data is readily on the stream, it will go to DynamoDB(storage) and distributed into a format set using Lambda function
+    - All the data that is already parked into dynamoDB, it can be connected to Visualization/ Bi tools. In this case, I’m using Streamlit
+    - End User may use flight Id to query the data that need to be used
+    
 
 
 3. Details of process :
