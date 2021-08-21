@@ -206,17 +206,13 @@ Column List
 
 
 # Demo
-- You could add a demo video here
-- Or link to your presentation video of the project
+**Work In Progress**
 
 # Conclusion
-Write a comprehensive conclusion.
-- How did this project turn out
-- What major things have you learned
-- What were the biggest challenges
+Overall, I found that this is very interesting project to explore. The main key here are actually experiencing on using AWS Services by experimenting with various data. Fortunately, I managed to completed the project capstone by using a lot of services starting from ingestion untill visualization. Actually, there are a lot services that will make the process easier if we know how to use. What's important here are exploring as far as you can, then only you know the right time to use that. Challenges for me would be the documentation, it is quite hard to document your project in a best way as other people could easily navigate
 
 # Follow Me On
-Add the link to your LinkedIn Profile
+https://www.linkedin.com/in/syahirahar/
 
 # Appendix
 
