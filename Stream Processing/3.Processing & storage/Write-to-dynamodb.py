@@ -51,7 +51,7 @@ def lambda_handler(event, context):
         cust_json = json.dumps(c_dict)
 
         #update customer column
-        #response = client.update_item(TableName='Customers2', Key = customer_key)
+        response = client.update_item(TableName='Customers2', Key = customer_key)
 
         #clean data to be feed into flight column
         f_dict = dict(dict_record)
@@ -110,7 +110,10 @@ def lambda_handler(event, context):
 
 
        #update table customers
-        response = client.update_item(TableName='Customers', Key = customer_key,AttributeUpdates={'flight':{'Value':{"S": flight_json}},'reviews':{'Value':{"S":rv_json}},'customer':{'Value':{"S":cust_json}},'flight_id':{'Value':{"S": str(dict_record['flight_id'])}}})
+        response = client.update_item(TableName='Customers2', Key = customer_key,AttributeUpdates={'flight':{'Value':{"S": flight_json}},
+                                                                                                  'reviews':{'Value':{"S":rv_json}},
+                                                                                                  'customer':{'Value':{"S":cust_json}},
+                                                                                                  'flight_id':{'Value':{"S": str(dict_record['flight_id'])}}})
 
 
 
