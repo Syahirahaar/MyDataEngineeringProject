@@ -16,9 +16,12 @@ Expected Result :
 
 
 Reason Doing Validation
-  - At first time I've done with my coach, I dod not include the validation process to because we focus just to make the pipeline works. However, after all finished. I were asked by my coach to insert the validation. It is for more efficient processing pipeline because at the end of the day, we only want quality data to be kept in the database that will be query by thousands of customer.
+  - At first time I've done with my coach, I did not include the validation process to because we focus just to make the pipeline works. However, after all finished. I were asked by my coach to insert the validation. It is for more efficient processing pipeline because at the end of the day, we only want quality data to be kept in the database that will be query by thousands of customer.
 
 ** future : insert comparison of output for with validation and w/o validation **
+
+Reference 
+  - WriteKinesis.py are at 3.processing&storage folder
 
 
 
