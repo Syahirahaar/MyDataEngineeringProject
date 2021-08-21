@@ -37,6 +37,7 @@
     - Edit Schema
     - Create Endpoint in VPC to connect VPC to S3
     - Run the job
+    - The job fle can be found [here](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Batch%20Processing/ingestion-to-redshift/gluejob_script.py)
 
 ![image](https://user-images.githubusercontent.com/48470854/130250510-d2851f5d-f294-4ea1-8e0c-5874863d58d1.png)
 
