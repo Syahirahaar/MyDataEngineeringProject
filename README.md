@@ -186,7 +186,7 @@ Column List
 
 1. The layout of Batch Processing
 
-![batch](https://user-images.githubusercontent.com/48470854/129659609-c5943f78-fa14-406d-acfe-1711d29acfee.jpg)
+![image](https://user-images.githubusercontent.com/48470854/130307558-be18e1c2-dfa2-413d-9940-c318f2ae6bfd.png)
 
 2.The flow for Streaming Process
     -  S3 bucket are initiated to be the storage for CSV ( name : bulkimport-sy)
@@ -200,24 +200,10 @@ Column List
    
   
 3. Details of process :
-   1. Data Ingestion To S3
-   2. Data Ingestion To Redshift
-   3. Data Processing & Storage
-   4. Visualization
+   1. [Data Ingestion To S3](https://github.com/Syahirahaar/MyDataEngineeringProject/tree/main/Batch%20Processing/ingest-tos3)
+   2. [Data Ingestion To Redshift](https://github.com/Syahirahaar/MyDataEngineeringProject/tree/main/Batch%20Processing/ingestion-to-redshift)
+   3. [Visualization]()
 
-
-
-## store
-Let's assume that the S3 bucket define below are th place where user will insert the file here. The file will be in .csv format. 
-Once the data available in this bucket,initial processing is performed by AWS Lambda everyday 
-![image](https://user-images.githubusercontent.com/48470854/125758392-5c3e805d-bb27-497a-8f56-dd279e3aedfc.png)
-
-## Processing
-In the processing stage, aws glue has been used to process 
-![image](https://user-images.githubusercontent.com/48470854/127276722-0b549435-e10d-4764-bec4-719235ddcb7b.png)
-
-
-## Visualizations
 
 # Demo
 - You could add a demo video here
