@@ -6,10 +6,11 @@ This Project will show how satisfied the customer towards services provided by a
 - In order for you to understanding how it works, you need to go through the process by yourself. Here, I challenged myself to create data processing pipeline in both   method which are Batch and Stream Processing.
 
 ### Objective of the project :
-1 . Study and understand data nature and how it can be process to make useful for the data engineer.
-2 . Build Storage pipeline and use batch and Stream processing method pipeline.
-3 . Experience real-life handling data using Amazon Services
-4 . Knowing what happened behind the beautiful graphs/chart
+
+    1 . Study and understand data nature and how it can be process to make useful for the data engineer.
+    2 . Build Storage pipeline and use batch and Stream processing method pipeline.
+    3 . Experience real-life handling data using Amazon Services
+    4 . Knowing what happened behind the beautiful graphs/chart
 
 ### The expected outcome from this project :
 - Complete pipeline for stream processing
