@@ -210,7 +210,14 @@ Column List
 
 
 # Demo
-**Work In Progress**
+
+**Stream Processing Video Demo**
+
+https://www.youtube.com/watch?v=B42Xq_6V7oM
+
+**Batch Processing Video Demo**
+
+https://www.youtube.com/watch?v=cwlYWsKvT4s
 
 # Conclusion
 Overall, I found that this is very interesting project to explore. The main key here are actually experiencing on using AWS Services by experimenting with various data. Fortunately, I managed to completed the project capstone by using a lot of services starting from ingestion untill visualization. Actually, there are a lot services that will make the process easier if we know how to use. What's important here are exploring as far as you can, then only you know the right time to use that. Challenges for me would be the documentation, it is quite hard to document your project in a best way as other people could easily navigate. However, for me this project is a kickstart that makes me understand deeper about actual data engineering works.
