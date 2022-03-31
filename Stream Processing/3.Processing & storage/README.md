@@ -1,3 +1,24 @@
+ # How To Create Lambda for being intermediate to write to Kinesis/S3/DynamoDB/Redshift
+
+1. Configuring for Lambda Write To Kinesis 
+   Here are the code page to see how to take data that has been sent through API to Kinesis : [WriteKinesis](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/WriteKinesis.py )
+ During creation of Lambda function, we also need to configure event to enable the schema compatible, below are the screenshot for event that I configured suitable for my code. Here is the [event] (https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Event_JSON_lambdaWriteToKinesis.txt)
+ 
+ 
+ 2. Configuring for Lambda Write To Dynamo 
+
+Steps to create Lambda :
+1. Create Function > Choose Blueprint > type kinesis at the search box > choose kinesis-process-record-python > may write your own code 
+2. Here is the [code](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Write-to-dynamodb.py)
+   
+3. Configuring for Lambda from Kinesis To S3 
+Steps to create Lambda function :
+1. Create Function > Choose Blueprint > type kinesis at the search box > choose kinesis-process-record-python > may write your own code
+2. 2. Here is the [code](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Write-Kinesis-To-S3.py)
+
+
+
+
 In this stage, processes that occurred here are creating S3 bucket, sending the raw data that accepted from API into S3 bucket, creating dynamoDB table,, configuring the Lambda file that enable the insertion into S3 and DynamoDB
 
 # Create S3 bucket ( for sending records accepted into Kinesis )
@@ -7,8 +28,6 @@ In this stage, processes that occurred here are creating S3 bucket, sending the 
 ![image](https://user-images.githubusercontent.com/48470854/129829126-91332d4e-e810-491c-9585-ac08a7a5499c.png)
 
 2. Create a Lambda function and put down the Lambda Code ([WriteToS3](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/processing%20%26%20storage/stream-to-s3.py))
-
-   - During creation of Lambda function, we also need to configure event to enable the schema compatible, below are the screenshot for event that I configured suitable for my code. Here is the event https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Event_JSON_lambdaWriteToKinesis.txt
 
 
 3. Give the Lambda roles in IAM to read kinesis and write data to S3
