@@ -6,12 +6,14 @@
  
  
 ### Configuring for Lambda Write To Dynamo 
+Now python version 2.7 has deprecated, only option is 3.8. The python code need slightly change to adapt with 3.8 version 
 
 Steps to create Lambda :
 1. Create Function > Choose Blueprint > type kinesis at the search box > choose kinesis-process-record-python > may write your own code 
 2. Here is the [code](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Write-to-dynamodb.py)
    
 ### Configuring for Lambda from Kinesis To S3 
+Now python version 2.7 has deprecated, only option is 3.8. The python code need slightly change to adapt with 3.8 version 
 
 Steps to create Lambda function :
 1. Create Function > Choose Blueprint > type kinesis at the search box > choose kinesis-process-record-python > may write your own code
