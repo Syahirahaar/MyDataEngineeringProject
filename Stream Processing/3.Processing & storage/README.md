@@ -8,6 +8,9 @@ In this stage, processes that occurred here are creating S3 bucket, sending the 
 
 2. Create a Lambda function and put down the Lambda Code ([WriteToS3](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/processing%20%26%20storage/stream-to-s3.py))
 
+   - During creation of Lambda function, we also need to configure event to enable the schema compatible, below are the screenshot for event that I configured suitable for my code.
+
+
 3. Give the Lambda roles in IAM to read kinesis and write data to S3
 
 ![image](https://user-images.githubusercontent.com/48470854/129829661-1e72c01c-314a-4bff-813d-1b30d177133f.png)
