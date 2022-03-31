@@ -1,20 +1,21 @@
  # How To Create Lambda for being intermediate to write to Kinesis/S3/DynamoDB/Redshift
 
-1. Configuring for Lambda Write To Kinesis 
+### Configuring for Lambda Write To Kinesis 
    Here are the code page to see how to take data that has been sent through API to Kinesis : [WriteKinesis](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/WriteKinesis.py )
  During creation of Lambda function, we also need to configure event to enable the schema compatible, below are the screenshot for event that I configured suitable for my code. Here is the [event] (https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Event_JSON_lambdaWriteToKinesis.txt)
  
  
- 2. Configuring for Lambda Write To Dynamo 
+### Configuring for Lambda Write To Dynamo 
 
 Steps to create Lambda :
 1. Create Function > Choose Blueprint > type kinesis at the search box > choose kinesis-process-record-python > may write your own code 
 2. Here is the [code](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Write-to-dynamodb.py)
    
-3. Configuring for Lambda from Kinesis To S3 
+### Configuring for Lambda from Kinesis To S3 
+
 Steps to create Lambda function :
 1. Create Function > Choose Blueprint > type kinesis at the search box > choose kinesis-process-record-python > may write your own code
-2. 2. Here is the [code](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Write-Kinesis-To-S3.py)
+2. Here is the [code](https://github.com/Syahirahaar/MyDataEngineeringProject/blob/main/Stream%20Processing/3.Processing%20%26%20storage/Write-Kinesis-To-S3.py)
 
 
 
@@ -49,6 +50,12 @@ Pick a suitable name for your table
 
 2. This is the snapshot for existing tables in DynamoDB 
 ![image](https://user-images.githubusercontent.com/48470854/129895528-3e975772-d5c8-4077-8fa3-547cf6ce882c.png)
+
+3. Steps to create table in dynamoDB including configuring PK, Sortkey, creating item 
+   - PK and SK can be configured during creating the table 
+   - creating item depends on data structure data. In my case, here is my data : <img width="685" alt="create_dynamo_table_2022" src="https://user-images.githubusercontent.com/48470854/161019047-8af38032-ee52-4509-990e-da47919aebbf.png">
+   - When you create item, the data structure that need to be choose as list as above  
+
 
 
 # Create Redshift table
